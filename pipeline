@@ -1,0 +1,35 @@
+pipeline {
+
+agent any
+
+stages {
+
+  stage ("code checkout") {
+
+     steps {
+        echo "we will clone git"
+     }
+   }
+
+  stage ("Build") {
+
+     steps {
+        echo "lets build a code" 
+     }
+   }
+
+  stage ("Test") {
+
+     steps {
+        echo "lets test a code"
+     }
+   }
+
+  stage ("Deploy") {
+
+     steps {
+        echo "lets deploy a code"
+     }
+   }
+}
+}
